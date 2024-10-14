@@ -1,0 +1,14 @@
+# graphing
+Flask
+google-cloud-firestore
+pandas
+matplotlib
+seaborn
+numpy
+
+
+# nlp-ai
+nltk
+google-cloud-firestore
+flask
+functions-framework

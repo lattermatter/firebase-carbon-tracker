@@ -1,0 +1,271 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+#main-title {
+    padding: 1rem
+}
+
+/* Input form styling */
+
+.form-section, .results-section {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* General buttons */
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Only sign out buttons */
+
+#sign-out-btn {
+    background-color: #18aa5a; /* Ensure the button looks like the others */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#sign-out-btn:hover {
+    background-color: #21d572;
+}
+
+/* Navbar elements */
+
+/* Styling for the navbar container */
+#navbar {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+#navbar ul {
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align items horizontally */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for each element in the navbar */
+#navbar-element {
+    margin: 0 1rem; /* Add space between elements */
+}
+
+/* Link styling inside navbar */
+#navbar-element a {
+    color: #fff;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+/* Form input area styling */
+form textarea {
+    width: 99%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical; /* Allow the textarea to be resizable vertically */
+}
+
+#data-display img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+
+  /* Style the tab */
+.tab {
+    overflow: hidden;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: #31e186;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #189e59;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #81ffa2;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+  
+.loading-message {
+    font-size: 16px;
+    color: #555; /* Change this color to match your theme */
+    text-align: center;
+    margin: 10px 0; /* Add some spacing */
+}
+
+
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.loading-message {
+    display: none; /* Initially hidden */
+    font-size: 18px;
+    font-weight: bold;
+    color: #10a80b; /* You can change this color */
+    animation: pulse 1s infinite; /* Pulsing animation */
+}
+
+/* Style for the table */
+#carbon-footprint-table {
+    width: 100%; /* Adjust width as needed */
+    border-collapse: collapse; /* Remove gaps between borders */
+    margin: 20px 0; /* Space above and below the table */
+}
+
+/* Style for table headers */
+#carbon-footprint-table th {
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 12px; /* Add padding around the header cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 2px solid #dddddd; /* Add a bottom border for separation */
+}
+
+/* Style for table data cells */
+#carbon-footprint-table td {
+    padding: 12px; /* Add padding around the data cells */
+    border-bottom: 1px solid #dddddd; /* Add a bottom border for separation */
+}
+
+/* Optional: Style for even rows for better readability */
+#carbon-footprint-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Slightly lighter background for even rows */
+}
+
+/* Optional: Hover effect for rows */
+#carbon-footprint-table tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+#password-reset-container {
+    margin-top: 20px; /* Adds space between the login form and the reset section */
+    padding: 15px; /* Adds padding inside the container */
+    border: 1px solid #ccc; /* Creates a border to distinguish it */
+    border-radius: 5px; /* Rounds the corners */
+    background-color: #f9f9f9; /* Light background for better visibility */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for separation */
+    max-width: 400px; /* Optional: Sets a max width */
+    margin-left: auto; /* Center align horizontally */
+    margin-right: auto;
+  }
+  
+  #password-reset-container h3 {
+    color: #333; /* Heading color */
+    font-size: 18px; /* Size for the heading */
+    margin-bottom: 10px; /* Space below heading */
+  }
+  
+  #password-reset-container p {
+    color: #666; /* Text color */
+    font-size: 14px; /* Font size */
+    margin-bottom: 10px; /* Space below paragraph */
+  }
+  
+  #password-reset-container input {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Padding for better spacing */
+    margin-top: 5px; /* Space between input and previous element */
+    border: 1px solid #ccc; /* Input border */
+    border-radius: 3px; /* Rounded input corners */
+  }
+  
+  #password-reset-container button {
+    background-color: #007bff; /* Button background */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for the button */
+    margin-top: 10px; /* Space above the button */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 3px; /* Rounded button corners */
+  }
+  
+  #password-reset-container button:hover {
+    background-color: #0056b3; /* Darker on hover */
+  }
+
+#reset-password-section {
+    margin-top: 20px; /* Adds space above the reset section */
+    border: 1px solid #ccc; /* Adds a border around the section */
+    padding: 15px; /* Adds padding inside the section */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+#forgot-password-button {
+    margin-top: 20px; /* Adds space above the button */
+  }

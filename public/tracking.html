@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+
+</head>
+<body>
+
+  <div id="navbar">
+      <header>
+          <nav id="navbar">
+          <ul>
+              <li id="navbar-element"><a href="index.html">Home</a></li>
+              <li id="navbar-element"><a href="enter.html">Enter Data</a></li>
+              <li id="navbar-element"><a href="dashboard.html">Dashboard</a></li>
+              <li id="navbar-element"><a href="tracking.html">Tracking</a></li>
+              <li id="navbar-element"><a href="recommendations.html">Recommendations</a></li>
+              <li id="navbar-element"><button id="sign-out-btn">Sign Out</button></li>
+          </ul>
+          </nav>
+      </header>
+  </div>
+
+  <main>
+      <h1 id="main-title">Tracking</h1>
+      <p>View your personalized graphs here.</p>
+
+      <!-- Tab buttons -->
+      <div id="loading-message" class="loading-message" style="display: none;">Loading graphs...</div>
+      
+      <button id="fetch-graphs-btn" disabled>Fetch Graphs</button>
+
+        <div id="tab-container" style="display:none;">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab('footprint_hours')">Footprint Hours</button>
+                <button class="tablinks" onclick="openTab('footprint_miles')">Footprint Miles</button>
+                <button class="tablinks" onclick="openTab('footprint_energy')">Footprint Energy</button>
+                <button class="tablinks" onclick="openTab('pie_chart')">Pie Chart</button>
+            </div>
+
+            <img id="img_display_section" src="" alt="">
+
+        </div>
+
+        <div id="too-little-entries" style="color: red"></div>
+
+  </main>
+
+  <script type="module" src="js/firebase-init.js"></script>
+  <script type="module" src="js/check-auth.js"></script>
+  <script type="module" src="js/fetch-function-data.js"></script>
+</body>
+</html>

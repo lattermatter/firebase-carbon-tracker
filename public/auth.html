@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <main>
+        <h1 id="main-title">Sign In to Your Account</h1>
+        <section class="form-section">
+            <form id="login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit" id="signInButton">Sign In</button>
+                <button type="button" id="signUpButton">Sign Up</button>
+            </form>
+            
+            <p id="error-message" style="color: red; display: none;">Invalid email or password. Please try again.</p>
+        </section>
+
+        <button id="google-signin-button">Sign in with Google</button>
+        <a href="index.html">Home</a>
+
+    <div>
+    
+        <button id="forgot-password-button">Forgot Password?</button>
+        
+        <div id="reset-password-section" style="display: none;">
+        <h3>Reset Password</h3>
+        <input type="email" id="reset-email" placeholder="Enter your email" />
+        <button id="reset-password-button">Send Reset Link</button>
+        <div id="reset-message" style="display: none;"></div>
+        </div>
+     </div>
+    </main>
+
+    <script type="module" src="js/firebase-init.js"></script>
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>

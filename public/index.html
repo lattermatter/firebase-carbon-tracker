@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+
+</head>
+<body>
+
+    <div id="navbar">
+        <header>
+            <nav id="navbar">
+            <ul>
+                <li id="navbar-element"><a href="index.html">Home</a></li>
+                <li id="navbar-element"><a href="enter.html">Enter Data</a></li>
+                <li id="navbar-element"><a href="dashboard.html">Dashboard</a></li>
+                <li id="navbar-element"><a href="tracking.html">Tracking</a></li>
+                <li id="navbar-element"><a href="recommendations.html">Recommendations</a></li>
+                <li id="navbar-element"><button id="sign-out-btn">Sign Out</button></li>
+            </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        
+        <h1 id="main-title">Home</h1>
+        <p>Manage your carbon footprint and get personalized recommendations!</p>
+
+        
+        <h2>How It Works</h2>
+        <p>Welcome to our Carbon Tracker application! This web app helps you monitor and reduce your carbon footprint through user-friendly tools and personalized recommendations.</p>
+
+        <h3>Key Features:</h3>
+        <ul>
+            <li><strong>Track Your Carbon Footprint:</strong> Input your daily activities, such as energy usage and transportation, to gain insights into your carbon emissions.</li>
+            <li><strong>Personalized Recommendations:</strong> Receive tailored tips and suggestions based on your input to help you reduce your carbon impact.</li>
+            <li><strong>Visualization Tools:</strong> Visualize your data with graphs and charts to see your progress over time.</li>
+            <li><strong>Gamification:</strong> Stay motivated by achieving goals and earning rewards for reducing your carbon footprint.</li>
+        </ul>
+
+        <h2>How to Use the App</h2>
+        <ol>
+            <li><strong><a href="./auth.html">Create an Account:</a></strong> Sign up to create your profile and start tracking your carbon emissions.</li>
+            <li><strong><a href="./enter.html">Input Your Data:</a></strong> Enter your daily energy consumption, transportation methods, and dietary choices.</li>
+            <li><strong><a href="./recommendations.html">Get Insights:</a></strong> Review your carbon footprint and receive personalized recommendations for reducing emissions.</li>
+            <li><strong><a href="./tracking.html">Monitor Progress:</a></strong> Use our visual tools to track your improvements over time.</li>
+            <li><strong><a href="./dashboard.html">Engage and Earn:</a></strong> Participate in challenges and earn a badge for reaching your goals!</li>
+        </ol>        
+
+        <h2>Technology Stack</h2>
+        <p>This application is built using the following technologies:</p>
+        <ul>
+            <li><strong>Frontend:</strong> HTML, CSS, and JavaScript</li>
+            <li><strong>Backend:</strong> Firebase for Authentication, Firestore for data storage</li>
+            <li><strong>Data Visualization:</strong> Google cloud functions with Python </li>
+            <li><strong>AI Features:</strong> Implemented graph predictions using Python with scikitlearn, uses nltk for NLP</li>
+            <li><strong>Hosting:</strong> Deployed on Firebase Hosting for seamless performance and scalability</li>
+        </ul>
+
+        <h2>Join Us in Making a Difference!</h2>
+        <p>By using this application, you are taking a step towards a more sustainable future. Let's work together to minimize our carbon footprint and promote eco-friendly practices!</p>
+        
+
+    </main>
+
+
+  <!-- TYPE=MODULE, SCRIPT LOADING -->
+  <script type="module" src="js/firebase-init.js"></script>
+  <script type="module" src="js/check-auth.js"></script>
+</body>
+</html>

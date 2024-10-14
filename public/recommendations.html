@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+
+</head>
+<body>
+
+    <div id="navbar">
+        <header>
+            <nav id="navbar">
+            <ul>
+                <li id="navbar-element"><a href="index.html">Home</a></li>
+                <li id="navbar-element"><a href="enter.html">Enter Data</a></li>
+                <li id="navbar-element"><a href="dashboard.html">Dashboard</a></li>
+                <li id="navbar-element"><a href="tracking.html">Tracking</a></li>
+                <li id="navbar-element"><a href="recommendations.html">Recommendations</a></li>
+                <li id="navbar-element"><button id="sign-out-btn">Sign Out</button></li>
+            </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        
+        <h1 id="main-title">Recommendations</h1>
+        <p>Enter your recommendations below. Tips will be saved and displayed your dashboard. There is a limit of 10 tip requests per week.</p>
+
+        <section class="form-section">
+          <h2>Get recommendations</h2>
+          
+          <form id="carbon-issue-form">
+              <label for="recommend-input">Describe your carbon-related issue (400 char limit):</label>
+              <textarea id="recommend-input" name="recommend-input" rows="5" placeholder="Enter details here..." required></textarea>
+              <button type="submit">Submit</button>
+              
+              <div id="loading-message" class="loading-message" style="display: none;">Loading recommendations...</div> <!-- Loading message -->
+              <div id="success-message" style="display: none; color: green; margin-top: 1rem;"></div>
+              <div id="error-message" style="display: none; color: red; margin-top: 1rem;"></div>
+              <div id="recommendation-output" style="margin-top: 1rem; font-weight: bold; color: blue;"></div> <!-- New sentiment display -->
+
+          </form>
+        </section>
+
+    </main>
+
+
+  <!-- TYPE=MODULE, SCRIPT LOADING -->
+  <script type="module" src="js/firebase-init.js"></script>
+  <script type="module" src="js/check-auth.js"></script>
+  <script type="module" src="js/fetch-recommendations.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow write operations for authenticated users
+    allow write: if request.auth != null;
+
+    // Allow read access only to authenticated users
+    match /{document=**} {
+      allow read: if request.auth != null;
+    }
+
+    // Specific rules for user data
+    match /user_predictions/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    match /user_carbon_data/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    match /user_init_data/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}

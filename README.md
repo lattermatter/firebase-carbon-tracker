@@ -1,6 +1,6 @@
 Overview
 
-The Carbon Tracker App is a web-based tool designed to help users monitor, understand, and reduce their carbon footprint. By integrating advanced AI features and intuitive visualizations, the app provides actionable insights for users to adopt a more sustainable lifestyle.
+The Carbon Tracker App is a web-based tool designed to help users monitor, understand, and reduce their carbon footprint. By integrating advanced AI features and intuitive visualizations, the app provides insights for users to adopt a more sustainable lifestyle.
 
 Key Features
 
@@ -35,8 +35,8 @@ NLP processes user input to gauge sentiment and provide tips aligned with their 
 
 Technology Stack
 
-Frontend: HTML, CSS, JavaScript (Chart.js or D3.js for visualizations)
-Backend: Python, Google Firebase Functions
+Frontend: HTML, CSS, JavaScript
+Backend: Python, Google Firebase Functions, nltk/scikitlearn/matplotlib
 Database: Google Firestore
 AI/ML: nltk for sentiment analysis, scikitlearn for predictive analysis
 Hosting: Google Firebase
